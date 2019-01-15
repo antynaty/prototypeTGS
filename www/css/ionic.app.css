@@ -9867,12 +9867,26 @@ a.button {
   border-radius: 7px;
   font-weight: 600;
   background: #54B494; }
-
+/*! multilevel sidemenu bar  !*/ 
 .multi-level, .item ul, .nav input[type="checkbox"] {
   display: none;
 }
 #menu:checked ~ .multi-level, .item input:checked ~ ul{
   display: block;
+}
+/*! accrodion list !*/ 
+.list .item.item-accordion {
+  line-height: 38px;
+  padding-top: 0;
+  padding-bottom: 0;
+  transition: 0.09s all linear;
+}
+.list .item.item-accordion.ng-hide {
+  line-height: 0px;
+}
+.list .item.item-accordion.ng-hide-add,
+.list .item.item-accordion.ng-hide-remove {
+  display: block !important;
 }
 ion-view, .pane, .view {
   background-color: #F6F6F3; }

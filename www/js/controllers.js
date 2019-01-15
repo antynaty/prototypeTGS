@@ -406,6 +406,133 @@ function ($scope, $stateParams, DocTGS) {
       $scope.hideVisualizador=false;
       $scope.showEstructura=false;
     };
+
+    $scope.toggle = function (scope) {
+        scope.toggle();
+    };
+    $scope.collapseAll = function () {
+        $scope.$broadcast('angular-ui-tree:collapse-all');
+    };
+
+    $scope.expandAll = function () {
+        $scope.$broadcast('angular-ui-tree:expand-all');
+    };
+    $scope.toggleGroup = function(group) {
+        group.show = !group.show;
+    };
+    $scope.isGroupShown = function(group) {
+    return group.show;
+    };
+    $scope.groups=  [
+        {
+			"nombre": "Contabildiad" , 
+			"categorias": [
+				{
+				  "nombre": "balances",
+					"subcategorias": [ 
+						{
+							"nombre": "balance 8 columnas"
+						},
+						{
+							"nombre": "balance clasificado"
+						}
+					]
+				},
+				{
+				  "nombre": "libro auxiliares",
+					"subcategorias": [
+						{
+							"nombre": "libro de ventas"
+						},
+						{
+							"nombre": "libro de retenciones"
+						},
+						{
+							"nombre": "libro de compras"
+						}
+					]
+				},
+			]
+		}, 
+		{
+			"nombre": "Impuestos" , 
+			"categorias": [
+				{
+				  "nombre": "Operacion renta",
+					"subcategorias": [ 
+						{
+							"nombre": "RLI"
+						},
+						{
+							"nombre": "CPT"
+						} 
+					]
+
+				},
+				{
+				  "nombre": "Declaración y solicitudes",
+					"subcategorias": [ 
+						{
+							"nombre": "F-2117"
+						},
+						{
+							"nombre": "F-3229"
+						},
+						{
+							"nombre": "F-4416"
+						}
+					]
+				},
+			]
+		}, 
+		{
+			"nombre": "Renta y Diferidos" , 
+			"categorias": [
+				{
+				  "nombre": "Activo Fijo",
+				},
+				{
+				  "nombre": "Proviciones",
+				},
+			]
+		},  
+		{
+			"nombre": "Otros sin clasificar" , 
+		}, 
+		{
+			"nombre": "Legales" , 
+			"categorias": [
+				{
+				  "nombre": "Corporativo",
+					"subcategorias": [ 
+						{
+							"nombre": "Poderes"
+						},
+						{
+							"nombre": "Actas de Directorio"
+						},
+						{
+							"nombre": "Contratos en General"
+						}
+					]
+				},
+				{
+				  "nombre": "Laboral",
+					"subcategorias": [
+						{
+							"nombre": "Reglamento de Higiene"
+						},
+						{
+							"nombre": "Contrato Directivo de Trabajo"
+						},
+						{
+							"nombre": "Reglamento interno"
+						}
+					]
+				},
+			]
+		}, 
+	]
 }])
    
 .controller('informaciNCtrl', ['$scope', '$stateParams', // The following is the constructor function for this page's controller. See https://docs.angularjs.org/guide/controller
