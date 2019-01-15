@@ -1,0 +1,108 @@
+<ion-view title="ESTADOS COPIA" id="page12">
+  <ion-nav-buttons side="left" class="has-header">
+    <button class="button button-royal icon ion-android-menu" ng-click="menu()"></button>
+  </ion-nav-buttons>
+  <ion-nav-buttons side="right" class="has-header">
+    <button class="button button-royal icon ion-android-more-vertical" ng-click="create()"></button>
+  </ion-nav-buttons>
+  <ion-content padding="false" class="has-header">
+    <div id="eSTADOSCOPIA-button-bar11" class="button-bar"></div>
+    <div class="list card" id="eSTADOSCOPIA-card24" ng-show="showComparativo" ng-hide="hideComparativo">
+      <div id="eSTADOSCOPIA-container529" class="parent">
+        <div id="eSTADOSCOPIA-container528" class="row">
+          <div id="eSTADOSCOPIA-container527" class="row">
+            <div id="eSTADOSCOPIA-container525" class="col-50">
+              <button id="eSTADOSCOPIA-button117" ng-click="comparativoFin()" style="color:#000000;font-size:15px;" class="button button-light button-block button-outline">Comparativo</button>
+            </div>
+            <div id="eSTADOSCOPIA-container526" class="col-50">
+              <button id="eSTADOSCOPIA-button118" ng-click="visualizacionFin()" style="color:#000000;" class="button button-light button-block button-outline">Visualización</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <form id="eSTADOSCOPIA-form65" class="list">
+        <h4 id="eSTADOSCOPIA-heading46" style="color:#000000;font-weight:lighter;">Estados de Situación Financiera Comparativo de DEMO COMPANY</h4>
+        <div id="eSTADOSCOPIA-container536" class="card">
+          <div id="eSTADOSCOPIA-container532" class="row">
+            <div id="eSTADOSCOPIA-container530" class="col-33">
+              <h4 id="eSTADOSCOPIA-heading47" style="color:#000000;font-weight:300;">Fecha de balance</h4>
+            </div>
+            <div id="eSTADOSCOPIA-container531" class="col-75">
+              <form id="eSTADOSCOPIA-form63" class="list">
+                <label class="item item-select button-select" id="eSTADOSCOPIA-select57">
+                  <span class="input-label">Mes</span>
+                  <select>
+                    <option ng-repeat="item in meses">{{item.mes}}</option>
+                  </select>
+                </label>
+                <label class="item item-select button-select" id="eSTADOSCOPIA-select58">
+                  <span class="input-label">Año</span>
+                  <select>
+                    <option ng-repeat="item in anos">{{item.ano}}</option>
+                  </select>
+                </label>
+              </form>
+            </div>
+          </div>
+          <div id="eSTADOSCOPIA-container535" class="row">
+            <div id="eSTADOSCOPIA-container533" class="col-33">
+              <h4 id="eSTADOSCOPIA-heading48" style="color:#000000;font-weight:300;">Fecha a comparar</h4>
+            </div>
+            <div id="eSTADOSCOPIA-container534" class="col-50">
+              <form id="eSTADOSCOPIA-form64" class="list">
+                <label class="item item-select button-select" id="eSTADOSCOPIA-select59">
+                  <span class="input-label">Mes</span>
+                  <select>
+                    <option ng-repeat="item in meses">{{item.mes}}</option>
+                  </select>
+                </label>
+                <label class="item item-select button-select" id="eSTADOSCOPIA-select60">
+                  <span class="input-label">Año</span>
+                  <select>
+                    <option ng-repeat="item in anos">{{item.ano}}</option>
+                  </select>
+                </label>
+              </form>
+            </div>
+          </div>
+        </div>
+      </form>
+      <div id="eSTADOSCOPIA-container540" class="row">
+        <div id="eSTADOSCOPIA-container539" class="row">
+          <div id="eSTADOSCOPIA-container537" class="col-50">
+            <button id="eSTADOSCOPIA-button119" ng-click="visualizacionFin()" style="font-weight:600;font-size:15px;border-radius:9px 9px 9px 9px;" class="button button-royal button-small">Comparar</button>
+          </div>
+          <div id="eSTADOSCOPIA-container538" class="col-67">
+            <button id="eSTADOSCOPIA-button120" style="font-weight:600;font-size:15px;border-radius:9px 9px 9px 9px;" class="button button-royal button-small">Último estado</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="list card" id="eSTADOSCOPIA-card25" ng-show="showVisualizacion" ng-hide="true">
+      <div id="eSTADOSCOPIA-container549" class="parent">
+        <div id="eSTADOSCOPIA-container548" class="row">
+          <div id="eSTADOSCOPIA-container547" class="row">
+            <div id="eSTADOSCOPIA-container545" class="col-50">
+              <button id="eSTADOSCOPIA-button124" ng-click="comparativoFin()" style="color:#000000;font-size:15px;" class="button button-light button-block button-outline">Comparativo</button>
+            </div>
+            <div id="eSTADOSCOPIA-container546" class="col-50">
+              <button id="eSTADOSCOPIA-button125" ng-click="visualizacionFin()" style="color:#000000;" class="button button-light button-block button-outline">Visualización</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <form id="eSTADOSCOPIA-form66" class="list">
+        <h4 id="eSTADOSCOPIA-heading49" style="color:#000000;font-weight:lighter;">Estados de Situación Financiera Comparativo de DEMO COMPANY</h4>
+        <div>
+          <img src="img/2d6BLp1ZRCCjpfj75eQ4_Estadosfin.png" style="display: block; width: 100%; height: auto; margin-left: auto; margin-right: auto;">
+        </div>
+      </form>
+      <div id="eSTADOSCOPIA-container552" class="row">
+        <div id="eSTADOSCOPIA-container550" class="col-50">
+          <button id="eSTADOSCOPIA-button126" style="color:#FFFFFF;border-radius:-37px -37px -37px -37px;" class="button button-royal button-small icon ion-android-download"></button>
+        </div>
+        <div id="eSTADOSCOPIA-container551" class="col- creator-container"></div>
+      </div>
+    </div>
+  </ion-content>
+</ion-view>

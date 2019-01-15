@@ -1,0 +1,64 @@
+<ion-side-menus enable-menu-with-back-views="false">
+  <ion-side-menu-content>
+    <ion-nav-bar class="bar-stable">
+      <ion-nav-back-button></ion-nav-back-button>
+      <ion-nav-buttons side="left">
+        <button class="button button-icon button-clear ion-navicon" style="background-color:#E0742F;color:#fff" menu-toggle="left"></button>
+      </ion-nav-buttons>
+    </ion-nav-bar>
+    <ion-nav-view name="side-menu21"></ion-nav-view>
+  </ion-side-menu-content>
+  <ion-side-menu side="left" id="side-menu21" style="background-color:#213945;">
+    <ion-content padding="false" style="top:0px !important;" class="side-menu-left ">
+      <div>
+        <img src="img/FD3J7ovQOWYO7NoGSDvV_tgs_logo_menu.png" style="display: block; width: 100%; height: auto; margin-left: auto; margin-right: auto;">
+      </div>
+      <ion-list id="sideMenuBar-list1" class="side-menu-bottom-up-item">
+        <ion-item class="item-icon-left positive" id="sideMenuBar-list-item1" ui-sref="sideMenuBar.bienvenido()" menu-close="">
+          <i class="icon ion-ios-home-outline"></i>Inicio
+          <ion-option-button class="button-positive" active-page-highlight=""></ion-option-button>
+        </ion-item>
+        <ion-item class="item-icon-left" id="sideMenuBar-list-item2" ui-sref="sideMenuBar.informaciN()" menu-close="" active-page-highlight="">
+          <i class="icon ion-android-person"></i>Informacion de Usuario 
+        </ion-item>
+          
+        <div class="nav" style="color: #908894;background: #1E343B;">
+              <input type="checkbox" id="menu"/> 
+              <div class=" muli-level " style="color: #908894;background: #1E343B;" >
+                <div class="item" style="color: #908894;background: #1E343B;">
+                  <input type="checkbox" id="A"/>
+                  <i class="icon ion-cash "></i>
+                  <label class=" side-menu-bottom-up-item" for="A"> Contabilidad</label>
+                  <span class="icon ion-android-arrow-dropleft icon-accessory" ></span>
+                  <ul >
+                    <li><a class="button" style="color:darkgray;background-color:#213945;" active-page-highlight="" ui-sref="sideMenuBar.estadosFinancieros()" menu-close="">Estados Financieros</a></li>
+                    <li><a class="button" style="color:darkgray;background-color:#213945" active-page-highlight="" ui-sref="sideMenuBar.balance8Columnas()" menu-close="">Balance 8 columnas</a></li>
+                  </ul>
+                </div>
+              </div>
+        </div>
+
+        <ion-item class="item-icon-left" id="sideMenuBar-list-item8" ui-sref="sideMenuBar.documentaciN()" menu-close="" active-page-highlight="">
+          <i class="icon ion-document-text"></i>Documentación
+          <ion-option-button class="button-dark">Estados Financieros</ion-option-button>
+        </ion-item>
+      </ion-list>
+      <ion-list id="sideMenuBar-list2" class="side-menu-down-item">
+        <ion-item class="item-icon-left side-menu-top-down-item" id="sideMenuBar-list-item4" ng-click="notImplemented()">
+          <i class="icon ion-thumbsup"></i>Impuestos</ion-item>
+        <ion-item class="item-icon-left item-icon-right side-menu-top-down-item" id="sideMenuBar-list-item5" ng-click="notImplemented()">
+          <i class="icon ion-hammer"></i>Legal
+          <i class="icon ion-android-arrow-dropleft icon-accessory"></i>
+        </ion-item>
+        <ion-item class="item-icon-left item-icon-right side-menu-top-down-item" id="sideMenuBar-list-item6" ng-click="notImplemented()">
+          <i class="icon ion-android-mail"></i>Capacitaciones
+          <i class="icon ion-android-arrow-dropleft icon-accessory"></i>
+        </ion-item>
+        <ion-item class="item-icon-left item-icon-right dark side-menu-top-down-item" id="sideMenuBar-list-item9" ng-click="notImplemented()">
+          <i class="icon ion-android-open"></i>Soporte
+          <i class="icon ion-android-arrow-dropleft icon-accessory"></i>
+        </ion-item>
+      </ion-list>
+    </ion-content>
+  </ion-side-menu>
+</ion-side-menus>

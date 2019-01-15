@@ -1,0 +1,118 @@
+$positive: #1E343B;
+$energized: #F2A539;
+$royal: #E0742F;
+$balanced: #F3F3F4;
+$SIDEMENU_BOTTOM: #17282E;
+$SIDELOGIN_BOTTOM_ACTIVATED: #337AB7;
+$SIDELOGIN_BOTTOM: #F2A539;
+$SIDEPROFILE_STATUS: #54B494;
+$ionicons-font-path: "../lib/ionic/fonts" !default;
+@import "../www/lib/ionic/scss";
+// azul pieda
+  // azul
+   // naranjo
+
+.side-menu-bottom-up-item {
+	.item-content {
+		// estado normal
+		color: #908894;
+		background: #1E343B;
+		// cambia de color la opcion presionada
+		&.activated {
+			color: white;
+			background: $SIDEMENU_BOTTOM;
+		}
+	}
+	// mantiene de un color distinto la opcion presionada  NO FUNCIONA
+	&.active-page-highlight {
+		.item-content {
+			color: white;
+			background: $SIDEMENU_BOTTOM;
+		}
+	}
+}
+.side-menu-top-down-item {
+	// los no implementados 
+	color: #908894;
+	background: #273035;
+	.item-content {
+		color: #908894;
+		background: #273035;
+		&.activated {
+			color: white;
+			background: $SIDEMENU_BOTTOM;
+		}
+	}
+	&.active-page-highlight {
+		.item-content {
+			color: white;
+			background: $SIDEMENU_BOTTOM;
+		}
+	}
+}
+.input-button-login {
+	background: #5F5F5F;
+	padding: 0%;
+	border-radius: 7px;
+	.input-label {
+		padding: 2%;
+		background: white;
+	}
+	
+	&.activated {
+		border-color: $SIDELOGIN_BOTTOM;
+	}
+	
+}
+.login-button {
+	padding: 1%;
+	border-radius: 7px;
+	margin: 15px;
+	color: white;
+	background-color: $SIDELOGIN_BOTTOM;
+	&.activated {
+		color: white;
+		border: $SIDELOGIN_BOTTOM_ACTIVATED;
+		background-color: $SIDELOGIN_BOTTOM_ACTIVATED;
+	}
+	
+}
+.button-pressed {
+	// botton que cambia su border para saber que lo estoy seleccionando
+	    border-color: #000000;
+	&.activated {
+		border-color: #DFDFDF;
+	}
+	
+}
+.button-link {
+	color: #5093CB;
+}
+
+.button-clicked {
+	// botton que cambia de color al presionarlo
+	    color: $SIDELOGIN_BOTTOM_ACTIVATED;
+	&.activated {
+		color: white;
+		border: $SIDELOGIN_BOTTOM_ACTIVATED;
+		background-color: $SIDELOGIN_BOTTOM_ACTIVATED;
+	}
+	
+}
+.background-login {
+	// contenido abajo
+	    background: #F4F4F4;
+}
+
+.text-container {
+	// textos con background
+	color: white;
+	border-radius: 7px;
+	font-weight: 600;
+	background: #54B494;
+}
+
+ion-view,.pane,.view {
+	background-color: #F6F6F3;
+}
+

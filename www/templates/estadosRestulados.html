@@ -1,0 +1,120 @@
+<ion-view title="Estados Restulados"  hide-back-button="true" id="page13">
+  <ion-nav-buttons side="left">
+      <!-- Toggle left side menu -->
+      <button menu-toggle="left" class="button button-icon icon ion-navicon"></button>
+  </ion-nav-buttons>
+  <ion-nav-buttons side="right" class="has-header">
+    <button class="button button-royal icon ion-android-more-vertical" ng-click="create()"></button>
+  </ion-nav-buttons>
+    <div class="spacer" style="width: 300px; height: 40px;"></div>
+    <div id="estadosRestulados-button-bar8" class="button-bar"></div>
+    <div class="list card" id="estadosRestulados-card29" ng-show="showComparativo" ng-hide="hideComparativo">
+      <div id="estadosRestulados-container413" class="parent">
+        <div id="estadosRestulados-container412" class="row">
+          <div id="estadosRestulados-container411" class="row">
+            <div id="estadosRestulados-container409" class="col-50">
+              <button id="estadosRestulados-button75" ng-click="comparativoRes()" style="font-size:15px;" class="button button-light button-block">Comparativo</button>
+            </div>
+            <div id="estadosRestulados-container410" class="col-50">
+              <button id="estadosRestulados-button76" ng-click="visualizacionRes()" class="button button-light button-block">Visualización</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <form id="estadosRestulados-form48" class="list">
+        <h4 id="estadosRestulados-heading35" style="color:#000000;font-weight:lighter;">Estados de Resultados por función Integrales de DEMO COMPANY</h4>
+        <div id="estadosRestulados-container420" class="card">
+          <div id="estadosRestulados-container416" class="row">
+            <div id="estadosRestulados-container414" class="col-33">
+              <h4 id="estadosRestulados-heading36" style="color:#000000;font-weight:300;">Fecha de balance</h4>
+            </div>
+            <div id="estadosRestulados-container415" class="col-75">
+              <form id="estadosRestulados-form46" class="list">
+                <label class="item item-select button-select" id="estadosRestulados-select48">
+                  <span class="input-label">Mes</span>
+                  <select>
+                    <option ng-repeat="item in meses">{{item.mes}}</option>
+                  </select>
+                </label>
+                <label class="item item-select button-select" id="estadosRestulados-select49">
+                  <span class="input-label">Año</span>
+                  <select>
+                    <option ng-repeat="item in anos">{{item.ano}}</option>
+                  </select>
+                </label>
+              </form>
+            </div>
+          </div>
+          <div id="estadosRestulados-container419" class="row">
+            <div id="estadosRestulados-container417" class="col-33">
+              <h4 id="estadosRestulados-heading37" style="color:#000000;font-weight:300;">Fecha a comparar</h4>
+            </div>
+            <div id="estadosRestulados-container418" class="col-50">
+              <form id="estadosRestulados-form47" class="list">
+                <label class="item item-select button-select" id="estadosRestulados-select50">
+                  <span class="input-label">Mes</span>
+                  <select>
+                    <option ng-repeat="item in meses">{{item.mes}}</option>
+                  </select>
+                </label>
+                <label class="item item-select button-select" id="estadosRestulados-select51">
+                  <span class="input-label">Año</span>
+                  <select>
+                    <option ng-repeat="item in anos">{{item.ano}}</option>
+                  </select>
+                </label>
+              </form>
+            </div>
+          </div>
+        </div>
+      </form>
+      <div id="estadosRestulados-container424" class="row">
+        <div id="estadosRestulados-container423" class="row">
+          <div id="estadosRestulados-container421" class="col-50">
+            <button id="estadosRestulados-button77" ng-click="visualizacionRes()" style="font-weight:600;font-size:15px;border-radius:9px 9px 9px 9px;" class="button button-royal button-small">Comparar</button>
+          </div>
+          <div id="estadosRestulados-container422" class="col-">
+            <button id="estadosRestulados-button78" style="font-weight:600;font-size:15px;border-radius:9px 9px 9px 9px;" class="button button-royal button-small">Último estado</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="list card" id="estadosRestulados-card210" ng-show="showVisualizacion" ng-hide="true">
+      <div id="estadosRestulados-container433" class="parent">
+        <div id="estadosRestulados-container432" class="row">
+          <div id="estadosRestulados-container431" class="row">
+            <div id="estadosRestulados-container429" class="col-50">
+              <button id="estadosRestulados-button82" ng-click="comparativoRes()" style="font-size:15px;" class="button button-light button-block">Comparativo</button>
+            </div>
+            <div id="estadosRestulados-container430" class="col-50">
+              <button id="estadosRestulados-button83" ng-click="visualizacionRes()" class="button button-light button-block">Visualización</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <form id="estadosRestulados-form49" class="list">
+        <h4 id="estadosRestulados-heading38" style="color:#000000;font-weight:lighter;">Estados de Situación Financiera Comparativo de DEMO COMPANY</h4>
+        <div>
+          <img src="img/bpurxgIRTfel3oVrEgXD_Estadosres.png" style="display: block; width: 100%; height: auto; margin-left: auto; margin-right: auto;">
+        </div>
+      </form>
+      <div id="estadosRestulados-container436" class="row">
+        <div id="estadosRestulados-container434" class="col-50">
+          <button id="estadosRestulados-button84" style="color:#FFFFFF;border-radius:-37px -37px -37px -37px;" class="button button-royal button-small icon ion-android-download"></button>
+        </div>
+        <div id="estadosRestulados-container435" class="col- creator-container"></div>
+      </div>
+    </div>
+ 
+    <ion-tabs class="tabs-stable tabs-icon-top tabs-energized"   id="tabsController-tabs1">
+      <ion-tab  title="Financiero" icon="ion-arrow-graph-up-right"  ui-sref="sideMenuBar.estadosFinancieros" id="tabsController-tab1">
+        <ion-nav-view name="tab1"></ion-nav-view>
+      </ion-tab>
+      <ion-tab class="active" title="Estado Resultado" icon="ion-cash"  ui-sref="sideMenuBar.estadosRestulados" id="tabsController-tab2">
+        <ion-nav-view name="tab2"></ion-nav-view>
+      </ion-tab>
+      <ion-tab   title="Cash flow" icon="ion-ios-pie-outline"  ui-sref="sideMenuBar.estadoDeFlujosEfectivo"  id="tabsController-tab3">
+        <ion-nav-view name="tab3"></ion-nav-view>
+      </ion-tab>
+    </ion-tabs>
+</ion-view>

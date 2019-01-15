@@ -1,0 +1,121 @@
+<ion-view title="Estados Financieros"  hide-back-button="true" id="page2" >
+  <ion-nav-buttons side="left">
+  <!-- Toggle left side menu -->
+    <button menu-toggle="left" class="button button-icon icon ion-navicon"></button>
+  </ion-nav-buttons>
+  <ion-nav-buttons side="right" class="has-header">
+    <button class="button button-royal icon ion-android-more-vertical" ng-click="create()"></button>
+  </ion-nav-buttons>
+    <div class="spacer" style="width: 300px; height: 40px;"></div>
+    <div id="estadosFinancieros-button-bar1" class="button-bar"></div>
+    <div class="list card" id="estadosFinancieros-card21" ng-show="showComparativo" ng-hide="hideComparativo">
+      <div id="estadosFinancieros-container304" class="parent">
+        <div id="estadosFinancieros-container312" class="row">
+          <div id="estadosFinancieros-container309" class="row">
+            <div id="estadosFinancieros-container375" class="col-50">
+              <button id="estadosFinancieros-button59" ng-click="comparativoFin()" style="color:#000000;font-size:15px;" class="button button-light button-block button-outline">Comparativo</button>
+            </div>
+            <div id="estadosFinancieros-container376" class="col-50">
+              <button id="estadosFinancieros-button60" ng-click="visualizacionFin()" style="color:#000000;" class="button button-light button-block button-outline">Visualización</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <form id="estadosFinancieros-form42" class="list">
+        <h4 id="estadosFinancieros-heading26" style="color:#000000;font-weight:lighter;">Estados de Situación Financiera Comparativo de DEMO COMPANY</h4>
+        <div id="estadosFinancieros-container367" class="card">
+          <div id="estadosFinancieros-container363" class="row">
+            <div id="estadosFinancieros-container361" class="col-33">
+              <h4 id="estadosFinancieros-heading27" style="color:#000000;font-weight:300;">Fecha de balance</h4>
+            </div>
+            <div id="estadosFinancieros-container362" class="col-75">
+              <form id="estadosFinancieros-form40" class="list">
+                <label class="item item-select button-select" id="estadosFinancieros-select40">
+                  <span class="input-label">Mes</span>
+                  <select>
+                    <option ng-repeat="item in meses">{{item.mes}}</option>
+                  </select>
+                </label>
+                <label class="item item-select button-select" id="estadosFinancieros-select41">
+                  <span class="input-label">Año</span>
+                  <select>
+                    <option ng-repeat="item in anos">{{item.ano}}</option>
+                  </select>
+                </label>
+              </form>
+            </div>
+          </div>
+          <div id="estadosFinancieros-container366" class="row">
+            <div id="estadosFinancieros-container364" class="col-33">
+              <h4 id="estadosFinancieros-heading29" style="color:#000000;font-weight:300;">Fecha a comparar</h4>
+            </div>
+            <div id="estadosFinancieros-container365" class="col-50">
+              <form id="estadosFinancieros-form41" class="list">
+                <label class="item item-select button-select" id="estadosFinancieros-select42">
+                  <span class="input-label">Mes</span>
+                  <select>
+                    <option ng-repeat="item in meses">{{item.mes}}</option>
+                  </select>
+                </label>
+                <label class="item item-select button-select" id="estadosFinancieros-select43">
+                  <span class="input-label">Año</span>
+                  <select>
+                    <option ng-repeat="item in anos">{{item.ano}}</option>
+                  </select>
+                </label>
+              </form>
+            </div>
+          </div>
+        </div>
+      </form>
+      <div id="estadosFinancieros-container384" class="row">
+        <div id="estadosFinancieros-container336" class="row">
+          <div id="estadosFinancieros-container337" class="col-50">
+            <button id="estadosFinancieros-button29" ng-click="visualizacionFin()" style="font-weight:600;font-size:15px;border-radius:9px 9px 9px 9px;" class="button button-royal button-small">Comparar</button>
+          </div>
+          <div id="estadosFinancieros-container338" class="col-67">
+            <button id="estadosFinancieros-button32" style="font-weight:600;font-size:15px;border-radius:9px 9px 9px 9px;" class="button button-royal button-small">Último estado</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="list card" id="estadosFinancieros-card28" ng-show="showVisualizacion" ng-hide="true">
+      <div id="estadosFinancieros-container393" class="parent">
+ 
+        <div id="estadosFinancieros-container392" class="row">
+          <div id="estadosFinancieros-container391" class="row">
+            <div id="estadosFinancieros-container389" class="col-50">
+              <button id="estadosFinancieros-button68" ng-click="comparativoFin()" style="color:#000000;font-size:15px;" class="button button-light button-block button-outline">Comparativo</button>
+            </div>
+            <div id="estadosFinancieros-container390" class="col-50">
+              <button id="estadosFinancieros-button69" ng-click="visualizacionFin()" style="color:#000000;" class="button button-light button-block button-outline">Visualización</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <form id="estadosFinancieros-form45" class="list">
+        <h4 id="estadosFinancieros-heading32" style="color:#000000;font-weight:lighter;">Estados de Situación Financiera Comparativo de DEMO COMPANY</h4>
+        <div>
+          <img src="img/2d6BLp1ZRCCjpfj75eQ4_Estadosfin.png" style="display: block; width: 100%; height: auto; margin-left: auto; margin-right: auto;">
+        </div>
+      </form>
+      <div id="estadosFinancieros-container403" class="row">
+        <div id="estadosFinancieros-container401" class="col-50">
+          <button id="estadosFinancieros-button28" style="color:#FFFFFF;border-radius:-37px -37px -37px -37px;" class="button button-royal button-small icon ion-android-download"></button>
+        </div>
+        <div id="estadosFinancieros-container402" class="col- creator-container"></div>
+      </div>
+    </div>
+
+  <ion-tabs class="tabs-stable tabs-icon-top tabs-energized"   id="tabsController-tabs1">
+      <ion-tab class="active" title="Financiero" icon="ion-arrow-graph-up-right"  href="#" id="tabsController-tab1">
+        <ion-nav-view name="tab1"></ion-nav-view>
+      </ion-tab>
+      <ion-tab  title="Estado Resultado" icon="ion-cash"  ui-sref="sideMenuBar.estadosRestulados" id="tabsController-tab2">
+        <ion-nav-view name="tab2"></ion-nav-view>
+      </ion-tab>
+      <ion-tab  title="Cash flow" icon="ion-ios-pie-outline"  ui-sref="sideMenuBar.estadoDeFlujosEfectivo"  id="tabsController-tab3">
+        <ion-nav-view name="tab3"></ion-nav-view>
+      </ion-tab>
+    </ion-tabs>
+</ion-view> 

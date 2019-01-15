@@ -1,0 +1,112 @@
+{ 
+	"items": [
+		{
+			"nombre": "Contabildiad" , 
+			"categoria": [
+				{
+				  "nombre": "balances",
+					"subcategoria": [ 
+						{
+							"nombre": "balance 8 columnas"
+						},
+						{
+							"nombre": "balance clasificado"
+						}
+					]
+				},
+				{
+				  "nombre": "libro auxiliares",
+					"subcategoria": [
+						{
+							"nombre": "libro de ventas"
+						},
+						{
+							"nombre": "libro de retenciones"
+						},
+						{
+							"nombre": "libro de compras"
+						}
+					]
+				}
+			]
+		}, 
+		{
+			"nombre": "Impuestos" , 
+			"categoria": [
+				{
+				  "nombre": "Operacion renta",
+					"subcategoria": [ 
+						{
+							"nombre": "RLI"
+						},
+						{
+							"nombre": "CPT"
+						} 
+					]
+
+				},
+				{
+				  "nombre": "Declaración y solicitudes",
+					"subcategoria": [ 
+						{
+							"nombre": "F-2117"
+						},
+						{
+							"nombre": "F-3229"
+						},
+						{
+							"nombre": "F-4416"
+						}
+					]
+				}
+			]
+		}, 
+		{
+			"nombre": "Renta y Diferidos" , 
+			"categoria": [
+				{
+				  "nombre": "Activo Fijo"
+				},
+				{
+				  "nombre": "Proviciones"
+				}
+			]
+		},  
+		{
+			"nombre": "Otros sin clasificar" 
+		}, 
+		{
+			"nombre": "Legales" , 
+			"categoria": [
+				{
+				  "nombre": "Corporativo",
+					"subcategoria": [ 
+						{
+							"nombre": "Poderes"
+						},
+						{
+							"nombre": "Actas de Directorio"
+						},
+						{
+							"nombre": "Contratos en General"
+						}
+					]
+				},
+				{
+				  "nombre": "Laboral",
+					"subcategoria": [
+						{
+							"nombre": "Reglamento de Higiene"
+						},
+						{
+							"nombre": "Contrato Directivo de Trabajo"
+						},
+						{
+							"nombre": "Reglamento interno"
+						}
+					]
+				}
+			]
+		}
+	]
+}

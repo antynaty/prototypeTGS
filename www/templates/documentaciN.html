@@ -1,0 +1,49 @@
+<ion-view title="Documentación" style="background-color:#F6F6F3;">
+  <ion-nav-buttons side="secondary">
+
+    <button class="button icon ion-android-more-vertical" ui-sref="sideMenuBar.configuraciN" style="color:#FFFFFF;border:none;background:#E0742F">
+    </button>
+  </ion-nav-buttons>
+
+
+  <ion-content padding="false" class="has-header">
+    <div class="parent">
+      <div class="card">
+        <h1 style="color:#000000;font-weight:300;">Documentos</h1>
+        <div class="show-list-numbers-and-dots">
+          <p style="margin-top:0px;color:#000000;font-size:-10px;">Aquí podrás encontrar toda la documentación en temas legales, tributarios y contables de tu organización. Selecciona el documento que deseas ver para mostrarlo en el visualizador. </p>
+        </div>
+      </div>
+      <div ng-hide="hideEstrcutura" ng-show="showEstructura" class="card">
+        <div class="row">
+          <div class="col-67">
+            <button ng-click="docEstructura()" style="color:#000000;font-size:15px;text-align:left;" class="button button-stable button-outline button-pressed">Estructura Data Room</button>
+          </div>
+          <div class="col-33">
+            <button ng-click="docVisualizador()" style="color:#000000;font-size:15px;text-align:right;" class="button button-light button-outline button-pressed">Visualizador</button>
+          </div>
+        </div>
+
+
+
+      <!--  VISUALZIADOR -->
+      <div ng-hide="true" ng-show="showVisualizador" class="card">
+        <div class="row">
+          <div class="col-67">
+            <button ng-click="docEstructura()" style="color:#000000;font-size:15px;text-align:left;" class="button button-stable button-outline button-pressed">Estructura Data Room</button>
+          </div>
+          <div class="col-33">
+            <button ng-click="docVisualizador()" style="color:#000000;font-size:15px;text-align:right;" class="button button-light button-outline button-pressed">Visualizador</button>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <div>
+              <img src="img/3KlIXvXQSqsGexgTyw2H_nopeview.png" style="display: block; width: 100%; height: auto; margin-left: auto; margin-right: auto;">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </ion-content>
+</ion-view>

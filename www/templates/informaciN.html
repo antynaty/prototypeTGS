@@ -1,0 +1,324 @@
+<ion-view title="Información" style="background-color:#F6F6F3;">
+  <ion-nav-buttons side="secondary">
+
+    <button class="button icon ion-android-more-vertical" ui-sref="sideMenuBar.configuraciN" style="color:#FFFFFF;border:none;background:#E0742F">
+    </button>
+  </ion-nav-buttons>
+
+  <ion-content padding="false" class="has-header">
+
+    <div class="card">
+      <div class="row">
+        <div class="col-25">
+          <div>
+            <img src="img/eBX8HZNmTEub3NMVrW0l_profileUser.png" style="display: block; width: 100%; height: auto; margin-left: auto; margin-right: auto;">
+          </div>
+        </div>
+        <div class="col-75">
+          <div class="row">
+            <div class="col-50">
+              <div class="show-list-numbers-and-dots">
+                <p style="color:#000000;">
+                  <strong>Status</strong>
+                </p>
+              </div>
+            </div>
+            <div class="col">
+              <div style="text-align:center;" class="show-list-numbers-and-dots text-container">
+                <p style="color:#FFFFFF;">Activo {{usuario.status}}</p>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-50">
+              <div class="show-list-numbers-and-dots">
+                <p style="color:#000000;">
+                  <strong>Nombres y apellidos</strong>
+                </p>
+              </div>
+            </div>
+            <div class="col">
+              <div style="text-align:center;" class="show-list-numbers-and-dots">
+                <p style="color:#000000;">Jorge prueba Rivas {{usuario.nombres}}</p>
+
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">
+              <div class="show-list-numbers-and-dots">
+                <p style="color:#000000;">
+                  <strong>Run</strong>
+                </p>
+              </div>
+            </div>
+            <div class="col">
+              <div style="text-align:center;" class="show-list-numbers-and-dots">
+                <p style="color:#000000;">123456789-k {{usuario.rut}}
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-50">
+              <div class="show-list-numbers-and-dots">
+                <p style="color:#000000;">
+                  <strong>Cargo</strong>
+                </p>
+              </div>
+            </div>
+            <div class="col-50">
+              <div style="text-align:center;" class="show-list-numbers-and-dots text-">
+                <p style="color:#000000;">QA Portal {{usuario.cargo}}
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-50">
+          <div class="show-list-numbers-and-dots">
+            <p style="color:#000000;">
+              <strong>Correo</strong>
+            </p>
+          </div>
+        </div>
+        <div class="col-50">
+          <div style="text-align:center;" class="show-list-numbers-and-dots text-">
+            <p style="color:#000000;">jorgeprueba@mail.com {{usuario.mail}} </p>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-50">
+          <div class="show-list-numbers-and-dots">
+            <p style="color:#000000;">
+              <strong>Rol</strong>
+            </p>
+          </div>
+        </div>
+        <div class="col-50">
+          <div style="text-align:center;" class="show-list-numbers-and-dots text-">
+            <p style="color:#000000;">Usuario {{usuario.rol}}
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-50">
+          <div class="show-list-numbers-and-dots">
+            <p style="color:#000000;">
+              <strong> </strong>
+            </p>
+          </div>
+        </div>
+        <div class="col-50">
+          <div style="text-align:center;" class="show-list-numbers-and-dots ">
+            <button class="button-link button button-small button-clear" style="color:#5093CB;font-weight:600">Cambiar contraseña </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+    <div ng-hide="false" ng-show="showInfoEmpresa" class="card">
+      <div class="row">
+        <div class="row">
+
+          <div class="col-67">
+            <button ng-click="infoEmpresa()" style="font-size:15px;font-weight:400;color:#000000" class="button button-small button-outline button-pressed icon ion-filing"> Empresas
+
+            </button>
+          </div>
+          <div class="col-33">
+            <button ng-click="infoSoporte()" style="font-size:15px;font-weight:400;color:#000000" class="button button-small button-outline button-pressed icon ion-android-call"> Soporte
+              <ion-icon name="business"></ion-icon>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="row prent">
+        <div class="card">
+          <div class="parent">
+            <div class="row">
+              <div class="col">
+                  <div class="show-list-numbers-and-dots">
+                    <p style="color:#000000;">
+                      <strong>Id</strong>
+                    </p>
+                  </div>
+                </div>
+              <div class="col">
+                <div class="show-list-numbers-and-dots">
+                  <p style="color:#000000;">
+                    <strong>Nombre</strong>
+                  </p>
+                </div>
+              </div>
+              <div class="col">
+                <div class="show-list-numbers-and-dots">
+                  <p style="color:#000000;">
+                    <strong>Razon social</strong>
+                  </p>
+                </div>
+              </div>
+              <div class="col">
+                <div class="show-list-numbers-and-dots">
+                  <p style="color:#000000;">
+                    <strong>RUN</strong>
+                  </p>
+                </div>
+              </div>
+              <div class="col">
+                <div class="show-list-numbers-and-dots">
+                  <p style="color:#000000;">
+                    <strong>Dirección </strong>
+                  </p>
+                </div>
+              </div>
+              <div class="col">
+                <div class="show-list-numbers-and-dots">
+                  <p style="color:#000000;">
+                    <strong>Telefono Empresa </strong>
+                  </p>
+                </div>
+              </div>
+              <div class="col">
+                <div class="show-list-numbers-and-dots">
+                  <p style="color:#000000;">
+                    <strong>Email Empresa </strong>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="subparent">
+            <div class="row">
+              <div class="col-10">
+                  <div class="show-list-numbers-and-dots text-container">
+                    <p style="color:#FFFFFF;"> 76
+                    </p>
+                  </div>
+                </div>
+              <div class="col">
+                <div class="show-list-numbers-and-dots">
+                  <p style="color:#000000;">DEMO COMPANY</p>
+                </div>
+              </div>
+              <div class="col">
+                <div class="show-list-numbers-and-dots">
+                  <p style="color:#000000;">DEMO COMPANY</p>
+                </div>
+              </div>
+              <div class="col">
+                <div class="show-list-numbers-and-dots">
+                  <p style="color:#000000;">20.636.954-k</p>
+                </div>
+              </div>
+              <div class="col">
+                <div class="show-list-numbers-and-dots">
+                  <p style="color:#000000;">Puerta del Sol 55, Piso 5, Las Condes Santiago, Chile</p>
+                </div>
+              </div>
+              <div class="col">
+                <div class="show-list-numbers-and-dots">
+                  <p style="color:#000000;">226110420</p>
+                </div>
+              </div>
+              <div class="col">
+                <div class="show-list-numbers-and-dots">
+                  <p style="color:#000000;">cuentas@tgsgroup.cl</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div ng-hide="true" ng-show="showInfoSoporte" class="card">
+      <div class="row">
+        <div class="row">
+          <div class="col-67">
+            <button ng-click="infoEmpresa()" style="font-size:15px;font-weight:400;color:#000000" class="button button-small button-clear button-pressed icon ion-filing"> Empresas
+              <ion-icon name="business"></ion-icon>
+            </button>
+          </div>
+          <div class="col-33">
+            <button ng-click="infoSoporte()" style="font-size:15px;font-weight:400;color:#000000" class="button button-small button-clear button-pressed icon ion-android-call"> Soporte
+              <ion-icon name="build"></ion-icon>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="card">
+          <div>
+            <div class="row">
+              <div class="col">
+                <div class="show-list-numbers-and-dots">
+                  <p style="color:#000000;">
+                    <strong>ID soporte</strong>
+                  </p>
+                </div>
+              </div>
+              <div class="col">
+                <div class="show-list-numbers-and-dots">
+                  <p style="color:#000000;">32345 {{soporte.id}}</p>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col">
+                <div class="show-list-numbers-and-dots">
+                  <p style="color:#000000;">
+                    <strong>Nombres</strong>
+                  </p>
+                </div>
+              </div>
+              <div class="col">
+                <div class="show-list-numbers-and-dots">
+                  <p style="color:#000000;">María {{soporte.nombres}}</p>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col">
+                <div class="show-list-numbers-and-dots">
+                  <p style="color:#000000;">
+                    <strong>Apellidos</strong>
+                  </p>
+                </div>
+              </div>
+              <div class="col">
+                <div class="show-list-numbers-and-dots">
+                  <p style="color:#000000;">Yepez {{soporte.apellidos}}</p>
+
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col">
+                <div class="show-list-numbers-and-dots">
+                  <p style="color:#000000;">
+                    <strong>Correo Eletrónico</strong>
+                  </p>
+                </div>
+              </div>
+              <div class="col">
+                <div class="show-list-numbers-and-dots">
+                  <p style="color:#000000;">maria@gmail.com</p>
+
+                  <p style="color:#000000;">{{soporte.mail}}</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </ion-content>
+
+</ion-view>

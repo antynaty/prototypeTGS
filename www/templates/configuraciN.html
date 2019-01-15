@@ -1,0 +1,71 @@
+<ion-view title="Configuración">
+  <ion-content padding="false" class="manual-remove-top-padding has-header" scroll="false">
+    <div class="card">
+      <div class="parent">
+        <div class="row" padding="true" style="position:center">
+          <h1 style="color:#000000; font-weight:300;"> Filtre su empresa</h1>
+        </div>
+        <div class="card">
+          <div class="row">
+            <div class="col-33">
+              <form class="list">
+                <label class="item item-input">
+                  <span class="input-label"> Empresa </span>
+                  <textarea placeholder=""></textarea></label>
+              </form>
+            </div>
+            <div class="col-67">
+              <form class="list">
+                <label class="item item-select">
+                  <span class="input-label"></span>
+                  <select>
+                    <option>DEMO COMPANY</option>
+                    <option>DEMO COMPANY 2</option>
+                    <option></option>
+                  </select>
+                </label>
+              </form>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-33">
+              <form class="list">
+                <label class="item item-input">
+                  <span class="input-label">Tributaria</span><textarea placeholder=""></textarea></label>
+              </form>
+            </div>
+            <div class="col-67">
+              <form class="list">
+                <label class="item item-select">
+                  <span class="input-label"></span>
+                  <select>
+                    <option>IFRS</option>
+                    <option></option>
+                  </select>
+                </label>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="row">
+          <div class="col-33 creator-container"></div>
+          <div class="col-50">
+            <a ng-click="notImplemented()" class="button button-large button-clear icon-left ion-android-settings button-clicked button-block" style="color:#206892">Soporte</a>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-33 creator-container"></div>
+          <div class="col-50">
+            <a ui-sref="login()" ng-click="alert()" class="button button-large button-clear icon-left ion-log-out button-clicked button-block" style="color:#206892">log out</a>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </ion-content>
+</ion-view>

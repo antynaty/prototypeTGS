@@ -1,0 +1,96 @@
+<ion-view title="Balance 8 Columnas" id="page10">
+
+    <ion-nav-buttons side="secondary">
+        <button class="button icon ion-android-more-vertical" ui-sref="sideMenuBar.configuraciN" style="color:#FFFFFF;border:none;background:#E0742F">
+        </button>
+    </ion-nav-buttons>
+
+  <ion-content padding="false" class="has-header">
+    
+    <div id="balance8Columnas-button-bar10" class="button-bar"></div>
+    <div class="list card" id="balance8Columnas-card22" ng-show="showComparativo" ng-hide="hideComparativo">
+      <div id="balance8Columnas-container494" class="parent">
+        <div id="balance8Columnas-container493" class="row">
+          <div id="balance8Columnas-container492" class="row">
+            <div id="balance8Columnas-container490" class="col-50">
+              <button id="balance8Columnas-button101" ng-click="comparativoFlujo()" style="font-size:15px;" class="button button-light button-block">Comparativo</button>
+            </div>
+            <div id="balance8Columnas-container491" class="col-50">
+              <button id="balance8Columnas-button102" ng-click="visualizacionFlujo()" class="button button-light button-block">Visualización</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <form id="balance8Columnas-form60" class="list">
+        <h4 id="balance8Columnas-heading43" style="color:#000000;font-weight:lighter;">Estado de Flujo efectivo de DEMO COMPANY</h4>
+        <div id="balance8Columnas-container498" class="card">
+          <div id="balance8Columnas-container497" class="row">
+            <div id="balance8Columnas-container495" class="col-33">
+              <h4 id="balance8Columnas-heading44" style="color:#000000;font-weight:300;">Fecha Balance</h4>
+            </div>
+            <div id="balance8Columnas-container496" class="col-75">
+              <form id="balance8Columnas-form59" class="list">
+                <label class="item item-select button-select" id="balance8Columnas-select55">
+                  <span class="input-label">Año</span>
+                  <select>
+                    <option ng-repeat="item in anos">{{item.ano}}</option>
+                  </select>
+                </label>
+              </form>
+            </div>
+          </div>
+          <div id="balance8Columnas-container517" class="row">
+            <div id="balance8Columnas-container515" class="col-33 creator-container"></div>
+            <div id="balance8Columnas-container516" class="col-75">
+              <form id="balance8Columnas-form62" class="list">
+                <label class="item item-select button-select" id="balance8Columnas-select56">
+                  <span class="input-label">Mes</span>
+                  <select>
+                    <option ng-repeat="item in anos">{{item.mes}}</option>
+                  </select>
+                </label>
+              </form>
+            </div>
+          </div>
+        </div>
+      </form>
+      <div id="balance8Columnas-container502" class="row">
+        <div id="balance8Columnas-container501" class="row">
+          <div id="balance8Columnas-container499" class="col-50">
+            <button id="balance8Columnas-button104" ng-click="visualizacionFlujo()" style="font-weight:600;font-size:15px;border-radius:9px 9px 9px 9px;" class="button button-royal button-small">Comparar</button>
+          </div>
+          <div id="balance8Columnas-container500" class="col-">
+            <button id="balance8Columnas-button105" style="font-weight:600;font-size:15px;border-radius:9px 9px 9px 9px;" class="button button-royal button-small">Último estado</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="list card" id="balance8Columnas-card23" ng-show="showVisualizacion" ng-hide="true">
+      <div id="balance8Columnas-container511" class="parent">
+        <div id="balance8Columnas-container510" class="row">
+          <div id="balance8Columnas-container509" class="row">
+            <div id="balance8Columnas-container507" class="col-50">
+              <button id="balance8Columnas-button109" ng-click="comparativoFlujo()" style="font-size:15px;" class="button button-light button-block">Comparativo</button>
+            </div>
+            <div id="balance8Columnas-container508" class="col-50">
+              <button id="balance8Columnas-button110" ng-click="visualizacionFlujo()" class="button button-light button-block">Visualización</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <form id="balance8Columnas-form61" class="list">
+        <h4 id="balance8Columnas-heading45" style="color:#000000;font-weight:lighter;">Estados de Situación Financiera Comparativo de DEMO COMPANY</h4>
+        <div>
+          <img src="img/vvgdVBFvRzyqxYK4bdvg_CASHFLOW.jpeg" style="display: block; width: 100%; height: auto; margin-left: auto; margin-right: auto;">
+        </div>
+      </form>
+      <div id="balance8Columnas-container514" class="row">
+        <div id="balance8Columnas-container512" class="col-50">
+          <button id="balance8Columnas-button111" style="color:#FFFFFF;border-radius:-37px -37px -37px -37px;" class="button button-royal button-small icon ion-android-download"></button>
+        </div>
+        <div id="balance8Columnas-container513" class="col- creator-container"></div>
+      </div>
+    </div>
+  </ion-content>
+</ion-view>
