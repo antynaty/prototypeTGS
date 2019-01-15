@@ -38,9 +38,14 @@
               <ion-item class="item-accordion"
                         ng-repeat="categoria in group.categorias"
                         ng-show="isGroupShown(group)">
+                  <i class="icon" ng-class="isGroupShown(group) ? 'ion-minus' : 'ion-plus'"></i>
                 {{categoria.nombre}}
               </ion-item>
-
+              <ion-item class="item-accordion"
+                        ng-repeat="subcategoria in categoria.subcategorias"
+                        ng-show="isGroupShown(group)">
+                {{subcategoria.nombre}}
+              </ion-item>
             </div>
           </ion-list>
         </div>
