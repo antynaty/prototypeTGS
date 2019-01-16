@@ -410,19 +410,19 @@ function ($scope, $stateParams, DocTGS) {
     $scope.toggle = function (scope) {
         scope.toggle();
     };
-    $scope.collapseAll = function () {
-        $scope.$broadcast('angular-ui-tree:collapse-all');
-    };
 
-    $scope.expandAll = function () {
-        $scope.$broadcast('angular-ui-tree:expand-all');
-    };
     $scope.toggleGroup = function(group) {
         group.show = !group.show;
     };
     $scope.isGroupShown = function(group) {
     return group.show;
     };
+    $scope.toggleCategoria = function(categoria) {
+        categoria.show = !categoria.show;
+    };
+    $scope.isCategoriaShown = function(categoria) {
+        return categoria.show;
+        };
     $scope.groups=  [
         {
 			"nombre": "Contabildiad" , 

@@ -37,13 +37,15 @@
               </ion-item>
               <ion-item class="item-accordion"
                         ng-repeat="categoria in group.categorias"
-                        ng-show="isGroupShown(group)">
-                  <i class="icon" ng-class="isGroupShown(group) ? 'ion-minus' : 'ion-plus'"></i>
+                        ng-click="toggleCategoria(categoria)"
+                        ng-show="isGroupShown(group)"    
+                        ng-class="{active: isCategoriaShown(categoria)}">  <!-- activa desactiva la opcione tocada -->
+                  <i class="icon" ng-class="isCategoriaShown(group) ? 'ion-minus' : 'ion-plus'"></i>
                 {{categoria.nombre}}
               </ion-item>
               <ion-item class="item-accordion"
                         ng-repeat="subcategoria in categoria.subcategorias"
-                        ng-show="isGroupShown(group)">
+                        ng-show="isCategoriaShown(categoria)">
                 {{subcategoria.nombre}}
               </ion-item>
             </div>
